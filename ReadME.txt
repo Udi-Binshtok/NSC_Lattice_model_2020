@@ -43,7 +43,7 @@ Notes:
 1) To change the simulation parameters go to a Matlab code file callled defaultparams.m located in the functions folder.
    In the defaultparams code you can see all of the parameters and change them as you wish.
 2) It is possible to provide an outside parameters set and outside initial geometrical and cells structure.
-   use [ geo,Cells, time, Movie, params, Simulation_timing ] = statistic_model_simulation( g, OutputFolder, OutputName, params, Initial_geo, Initial_Cells);
+   use [ geo,Cells, time, Movie, params, Simulation_timing ] = NSC_lattice_model_simulation( g, OutputFolder, OutputName, params, Initial_geo, Initial_Cells);
    where params is the parameters set (should be similar to the set you get from the function defaultparams.m). 
    Initial_geo and Initial_Cells are the structures geo and Cells (See function NSC_lattice_model_simulation.m for more details).
 
