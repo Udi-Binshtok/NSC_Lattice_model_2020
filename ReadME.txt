@@ -18,7 +18,7 @@ NOTE: the default number of time steps is 500 (which might take a very long time
 ****************************************************************************************************************************************************************
 To run a simulation (with the default parameters) follow these instructions:
 1) Open Matlab software.
-2) Set Matlab Current Folder to the folder containing the code files and the function folder.
+2) Set Matlab Current Folder to the folder containing the code files and the functions folder.
 3) In the Command Window type: 
    Load('lattice.mat')
    press enter (to load the file).
@@ -32,7 +32,7 @@ To run a simulation (with the default parameters) follow these instructions:
    OutputName = 'simulation_number1';
    press enter
 6) To start the simulation type in the Command Window:
-   [ geo, Cells, time, Movie, params, Simulation_timing ] = statistic_model_simulation( g, OutputFolder, OutputName, [], [], []);
+   [ geo, Cells, time, Movie, params, Simulation_timing ] = NSC_lattice_model_simulation( g, OutputFolder, OutputName, [], [], []);
    press enter
 
 The simulation will start.
