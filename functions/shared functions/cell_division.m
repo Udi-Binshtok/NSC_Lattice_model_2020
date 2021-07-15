@@ -157,7 +157,7 @@ function [g1, new_cell_num, weird] = cell_division( g, cell_num )
     if length(bonds) == 3
         
     % sanity check
-    disp('please check if the cell division for 3 vertices is working properly')
+%    disp('please check if the cell division for 3 vertices is working properly')
 %     keyboard
     
         %%% calculating the length of each bond 
@@ -176,8 +176,12 @@ function [g1, new_cell_num, weird] = cell_division( g, cell_num )
         longest_bond_position = ind(end);
         second_longest_bond_position = ind(end-1);
         
+        bond_number_second_longest = bonds(second_longest_bond_position);
+        
         %%% 1st - split the longest bond
         [g1,new_vert1_number] = SplitBond(g1,cell_num,longest_bond_position);
+        
+        second_longest_bond_position = find(g1.cells{c+1} == bond_number_second_longest); % update the index of the second longest bond
                                                      
         %%% 2nd - split the second longest bond. consider that now the cell has 5 bonds
         [g1,new_vert2_number] = SplitBond(g1,cell_num,second_longest_bond_position);
