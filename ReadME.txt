@@ -37,7 +37,6 @@ To run a simulation (with the default parameters) follow these instructions:
 
 The simulation will start.
 Every 10 time steps the current time step will be displayed in the Command Window.
-NOTE: If right after the simulation as started there is a problem with a missmatch dimensions error (Matlab error will appear in red in the Command Window), it could be due to a small error with the lattice initial conditions - just try to run the NSC_lattice_model_simulation again.
 
 Notes:
 1) To change the simulation parameters go to a Matlab code file callled defaultparams.m located in the functions folder.
